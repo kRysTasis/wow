@@ -1,0 +1,32 @@
+# web
+.DS_Store
+node_modules
+dist
+.env
+
+# api
+__pycache__
+migrations
+*.sqlite3
+
+# db
+mysql
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

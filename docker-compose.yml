@@ -1,0 +1,20 @@
+version: '3'
+services:
+  api:
+    build: ./api
+    image: drf-image
+    container_name: wow-api
+    ports:
+      - '8000:8000'
+    volumes:
+      - ./api/:/usr/src/wow/api/
+    tty: true
+  web:
+    build: ./web
+    image: vue-image
+    container_name: wow-web
+    ports:
+      - '8080:8080'
+    volumes:
+      - ./web/:/usr/src/wow/web/
+    tty: true
